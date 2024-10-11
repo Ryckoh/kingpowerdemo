@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Furniture and Interior Decor procurement site</title>
+
+
+       <!-- Latest compiled and minified CSS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    
+   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Images/fav.ico">
+  </head>
+
+
+
+  <body>
+
+
+    <!------------stickyNAV--------------------->
+    <div id="mySidenav" class="sidenav">
+         
+        <div class="flex justify-between">
+          <a class="-mt-14 ml-3" href="Home.html"><div class="Logo sm:mt-1 mt-2">
+            <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+           <h1 class="logo sm:text-2xl text-base text-gray-400 sm:-my-3 -my-2">furnish.</h1>
+          </div></a>
+
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+
+        <div class="mt-36 text-center">
+          <a class="bnav hover:text-red-500" href="Home.html">Home</a>
+          <a class="bnav" href="Cart.html">Prod</a>
+          <a class="bnav" href="Blog.html">Blog</a>
+          <a class="bnav" href="About.html">About</a>
+        </div>
+
+        <div class="nabfoot absolute bottom-0 right-16">
+          <h1 class="ml-14">
+          <i class="text-gray-700 hover:text-white fab fa-twitter"></i>
+          <i class="text-gray-700 hover:text-white fab fa-facebook"></i>
+                </h1>
+        <p class="text-gray-700">seismic ideas | &copy; 2021</p>
+        </div>
+
+          <ul class="cube-effect " style="z-index: -1;">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+       </ul>
+
+    </div>
+    
+    
+    
+
+    <header class="flex justify-between bg-black items-center w-full m-auto lg:px-10 px-3 py-2">
+
+        <a href="Home.html"><div class="Logo sm:mt-1 mt-0 w-4/12">
+            <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+           <h1 class="logo sm:text-2xl text-base text-white sm:-mt-3 -my-2">furnish.</h1>
+          </div></a>
+
+
+          <div class="flex justify-between items-center gap-4 lg:w-3/12 md:w-3/12 sm:w-4/12 w-4/12">
+
+            <span class="navbi text-white cursor-pointer md:text-2xl text-xl" onclick="openNav()">&#9776;</span>
+
+       
+            <div id="line">
+                <h1 class="draw">
+                <a href="Login.html"><h1 class="sm:flex hidden hover hover-1 sm:text-lg text-sm text-white cursor-pointer"><i class="far fa-user">Login</i></h1></a>
+                </h1>
+            </div>
+
+            <div id="line">
+                <h1 class="draw">
+                  <a href="Login.html"><h1 class="sm:hidden flex hover hover-1 text-base text-white cursor-pointer"><i class="far fa-user"></i></h1></a>
+                </h1>
+              </div>
+
+
+            <div class="cart-btn">
+            <span class="nav-icon text-white ">
+                <i class="sm:text-lg text-base fas fa-cart-plus"></i>
+            </span>
+             <div class="cart-items bg-red-500 px-1 text-xs rounded text-white absolute top-2 sm:right-8 right-2">0</div>
+            </div>
+
+
+
+      </div>
+
+    </header>
+
+<section class="bg-gray-100">
+    <section class="sm:pt-20 pt-16 w-11/12 m-auto">
+
+        <h1 class="regis font-extrabold text-gray-300 md:text-4xl sm:text-3xl text-2xl">Explore <span class="regis font-extrabold text-red-500 md:text-4xl sm:text-3xl text-2xl">Our Products</span></h1>
+          <div class="border-b border-red-500 sm:w-1/12 w-2/12 my-4"></div>
+
+
+        <div class="flex sm:flex-row flex-col justify-between items-center">
+        <h1 class="text-base text-black">Hey there! find you a world of quality varieties at the cheapest rates</h1>
+        <h1 class="text-black text-base">>>>>Get <span class="text-red-500">25% discount</span> when you make purchase over $4000!>>>></h1>
+        </div>
+    
+    </section>
+
+
+    <div class="h-auto shadowi py-4 my-3">
+        <div class="w-11/12 sm:flex-row flex-col  flex justify-between m-auto">
+
+        
+        <div class="flex  justify-center items-center 4/12">
+            <div class="number text-red-500 text-xl font-extrabold mara regis pr-4">356</div>
+            <p class="text-xl"> products found</p>
+        </div>
+
+        <h1 class="flex sm:w-6/12 w-full">
+            <input class="w-full px-1 border-gray-400 border focus:outline-none rounded-l-sm text-black" type="text" name="text" placeholder="Search products, brands and categories">
+            <button class="text-white px-3 rounded-r-sm py-1 bg-red-500 focus:outline-none hover:bg-gray-500">SEARCH</i>
+            </button></h1>
+    
+
+        </div>
+    </div>
+
+
+
+    <div class="pt-6">
+
+        <div class="cont flex sm:flex-row flex-col justify-between items-center w-11/12 m-auto">
+
+        <div class="bg-gray-600 sm:w-11/12 w-full sm:mb-0 mb-2 sm:block flex justify-between">
+            <span class="mr-14 pl-2 text-white">Browse by categories</span>
+            <a href="sofadetails.html"><button class="px-1 ml-3 hover:bg-gray-500 bg-red-600 text-white">Product details</button></a>
+        </div>
+
+        <div class="sm:w-2/12 w-full sm:mb-0 mb-2">
+            <h1 id="filta" class="px-2 text-base hover:bg-gray-500 bg-gray-800 text-white cursor-pointer"><i class="text-white text-base fas fa-filter"></i>Filter</h1>
+            <div id="pana" class="py-2">
+                <h1 class="font-semibold">Sort products by:</h1>
+                <h1 class="hover:text-red-500 sm:text-sm text-xs text-black cursor-pointer">Popularity</h1>
+                <h1 class="hover:text-red-500 sm:text-sm text-xs text-black cursor-pointer">Price:Low to high</h1>
+                <h1 class="hover:text-red-500 sm:text-sm text-xs text-black cursor-pointer">Price:High to Low</h1>
+                <h1 class="hover:text-red-500 sm:text-sm text-xs text-black cursor-pointer">Product rating</h1>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+   
+
+
+
+
+<wrapper class="flex sm:flex-row flex-col justify-between items-start w-11/12 m-auto">
+        <!-------------------------CATEGORIES NAVIGATION------------------------------------------->
+
+
+            
+            <section class="flex-col flex sm:w-3/12 w-full">
+                <a href="Cart.html"><h1 class="font-semibold sm:text-base hover:text-green-700 cursor-pointer">New arrivals</h1></a>
+
+                <article class="">
+                    <div id="flip" class="font-semibold text-base hover:text-green-700 border-current border-t cursor-pointer">Living room collections</div>
+                    <div id="panel" class="py-2 border-current border-t border-b">
+                    <a href="sectionalscart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Sectionals</h1></a>
+                    <a href="Sofacart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-red-500 cursor-pointer">Sofas</h1></a>
+                    <a href="Otto.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Benches and ottomans</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Chaise lounges & daybeds</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Leather seating</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Chairs</h1></a>
+                    
+                    </div>
+                </article>
+
+                <article class="">
+                    <div id="fli" class="font-semibold text-base hover:text-green-700  cursor-pointer">Bedroom collections</div>
+                    <div id="pane" class="py-2 border-current border-t border-b">
+                    <a href="Beds.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Beds</h1></a>
+                    <a href="Headboards.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Headboards</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Nightstands</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Dressers</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Armories</h1></a>
+                    </div>
+                </article>
+
+                <article class="">
+                    <div id="flipe" class="font-semibold text-base hover:text-green-700  cursor-pointer">Kitchen and Dinning room</div>
+                    <div id="panele" class="py-2 border-current border-t border-b">
+                    <a href="Kitchen.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Chairs, Benches & Stools</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Bar Carts & Cabinets</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Buffets & Sideboards</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Dinning sets</h1></a>
+                    </div>
+                </article>
+
+                <article class="">
+                    <div id="fliper" class="font-semibold text-base hover:text-green-700  cursor-pointer">Small and office space furnitures</div>
+                    <div id="paneler" class="py-2 border-current border-t border-b">
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum.</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    </div>
+                </article>
+
+                <article class="">
+                    <div id="fl" class="font-semibold text-base hover:text-green-700  cursor-pointer">Bathroom and outdoor furnitures</div>
+                    <div id="pan" class="py-2 border-current border-t border-b">
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum.</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    </div>
+                </article>
+
+                <article class="">
+                    <div id="deco" class="font-semibold text-base hover:text-green-700  cursor-pointer">Decor & Styling Services</div>
+                    <div id="decor" class="py-2 border-current border-t border-b">
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum.</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem</h1></a>
+                    <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    </div>
+                </article>
+
+
+
+
+            </section>
+
+
+
+
+ <!------------------------------------Products SHOWCASE---------------------------------->
+       <section class="sm:w-9/12 w-full">
+
+            <!--products -->
+            <section class="products">
+                <!-- <div class="py-13 px-3 bg-black">Living room</div> -->
+                <div class="products-center">
+                    <!-- single product  -->
+                    <!----end of single product  -->
+                </div>
+
+                <div class="flex justify-between py-12">
+                <p class="bg-transparent">.</p>
+                <a href="Otto.html"><button class="cursor-pointer focus:outline-none px-2 py-1 hover:bg-gray-500 bg-red-600 text-white">Load more</button></a>
+                </section>
+
+                <!--end of products-->
+
+
+                    <!----cart  -->
+                    <div class="cart-overlay">
+                        <div class="cart">
+                            <span class="close-cart">
+                            <i class="fas fa-window-close"></i>
+                        </span>
+                        <h2 class="text-2xl font-semibold text-gray-700">Your Cart</h2>
+                        <div class="cart-content">
+                            <!--cart item-->
+                            <div class="cart-item">
+                            
+                        </div>
+                    <!----end of cart item-->
+                </div>
+
+                <div class="cart-footer">
+                    <h3>your total : $ <span class="cart-total">0</span></h3>
+                    <button class="clear-cart banner-btn px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Clear cart</button>
+                    <a href="Checkout.html"><button  onclick="ala()" class="px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Checkout</button></a>
+                </div>
+
+            </div>
+            </div>
+
+    </section>
+
+
+</wrapper> 
+
+
+
+
+
+
+
+
+     <!----------JQUERY SLIDER------------->
+            <script> 
+                $(document).ready(function(){
+                $("#flip").click(function(){
+                    $("#panel").slideToggle("fast");
+                });
+                });
+            </script>
+
+            <script> 
+                $(document).ready(function(){
+                $("#fli").click(function(){
+                    $("#pane").slideToggle("fast");
+                });
+                });
+            </script>
+            <script> 
+                $(document).ready(function(){
+                $("#flipe").click(function(){
+                    $("#panele").slideToggle("fast");
+                });
+                });
+            </script>
+            <script> 
+                $(document).ready(function(){
+                $("#fliper").click(function(){
+                    $("#paneler").slideToggle("fast");
+                });
+                });
+            </script>
+            <script> 
+                $(document).ready(function(){
+                $("#fl").click(function(){
+                    $("#pan").slideToggle("fast");
+                });
+                });
+            </script>
+
+            <script> 
+                $(document).ready(function(){
+                $("#deco").click(function(){
+                    $("#decor").slideToggle("fast");
+                });
+                });
+            </script>
+
+
+
+
+
+        <!---------------FILTER TOOGLE------------->
+            <script> 
+                $(document).ready(function(){
+                $("#filta").click(function(){
+                    $("#pana").slideToggle("fast");
+                });
+                });
+            </script>
+
+
+        <!---------------------------Sticky Navbar------------->
+           <script>
+             function ala() {
+                alert("Hey there! This is a just Demo, but when launched you will need to login before you can checkout. But for now, proceed to checkout");
+                }
+
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0)
+            });
+        </script>
+
+    
+
+
+
+<!----------------------SIDENAV TOOGLE------------------------------------>
+<script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+    }
+    
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    
+
+    <!-------counter up------------>
+    <script>
+        $(".number").counterUp({time:9000});
+      </script>
+
+
+
+
+      <script>
+
+        //variables
+
+const cartBtn = document.querySelector(".cart-btn");
+const closeCartBtn = document.querySelector(".close-cart");
+const clearCartBtn = document.querySelector(".clear-cart");
+const cartDOM = document.querySelector(".cart");
+const cartOverlay = document.querySelector(".cart-overlay");
+const cartItems = document.querySelector(".cart-items");
+const cartTotal = document.querySelector(".cart-total");
+const cartContent = document.querySelector(".cart-content");
+const productsDOM = document.querySelector(".products-center");
+
+//cart
+let cart = [];
+//buttons
+let buttonsDOM = []
+
+//getting the  products
+class Products{
+ async getProducts(){
+try {
+    let result =  await fetch("sofa.json");
+    let data = await result.json();
+
+    let products = data.items;
+    products = products.map(item =>{
+        const {title,price} = item.fields;
+        const {id} = item.sys
+        const image = item.fields.image.fields.file.url;
+        return {title,price,id,image}
+    })
+
+    return products;
+  } catch (error) {
+    console.log(error);
+
+  }
+
+ }
+}
+//display products
+class UI {
+    displayProducts(products) {
+    let result = '';
+    products.forEach(product => {
+        result += `
+        <!-- single product  -->
+        <article class="products">
+            <div class="img-container">
+                <img src=${product.image}
+                class="product-img"/>
+
+                <button class="bag-btn" data-id=${product.id}>
+                    <i class="fas fa-shopping-cart"></i>
+                    add to cart
+                </button>
+            </div>
+            <h3>${product.title}</h3>
+            <h4>$${product.price}</h4>
+        </article>
+        
+        `
+
+    })
+    productsDOM.innerHTML = result;
+  }
+  getBagButtons(){
+      const buttons = [...document.querySelectorAll
+        (".bag-btn")
+    ];
+    buttonsDOM = buttons;
+    buttons.forEach(button =>{
+        let id = button.dataset.id;
+        let inCart = cart.find(item => item.id === id);
+        if(inCart) {
+            button.innerText = "In Cart";
+            button.disabled = true;
+        }
+            button.addEventListener("click",event => {
+                event.target.innerText = "In Cart";
+                event.target.disabled = true;
+                // get product from products
+                let cartItem = {...Storage.getProduct(id),amount:1};
+                //add product to the cart
+                cart = [...cart, cartItem];
+                console.log(cart);
+                //save cart in local storage
+                Storage.saveCart(cart);
+                //set cart values
+                this.setCartValues(cart);
+                //display cart items
+                this.addCartItem(cartItem);
+                //show cart
+                this.showCart();
+            });
+    });
+  }
+  setCartValues(cart) {
+      let tempTotal = 0;
+      let itemsTotal = 0;
+           cart.map(item => {
+           tempTotal += item.price * item.amount;
+           itemsTotal += item.amount;
+        });
+        cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
+        cartItems.innerText = itemsTotal;
+  }
+  addCartItem(item){
+    const div = document.createElement('div');
+    div.classList.add('cart-item');
+    div.innerHTML = `<img src=${item.image} alt="product" />
+                    <div>
+                        <h4>${item.title}</h4>
+                        <h5>$${item.price}</h5>
+                        <span class="remove-item" data-id=${item.id}>remove</span>
+                    </div>
+                <div>
+                <i class="fas fa-chevron-up" data-id=${item.id}></i>
+                <p class="item-amount">${item.amount}</p>
+                <i class="fas fa-chevron-down" data-id=${item.id}></i>
+                </div>`
+                cartContent.appendChild(div);
+               
+  }
+  showCart(){
+    cartOverlay.classList.add('transparentBcg');
+    cartDOM.classList.add('showCart');
+  }
+  setupAPP(){
+      cart = Storage.getCart();
+      this.setCartValues(cart);
+      this.populateCart(cart);
+      cartBtn.addEventListener("click",this.showCart);
+      closeCartBtn.addEventListener("click",
+      this.hideCart);
+  }
+  populateCart(cart){
+      cart.forEach(item => this.addCartItem(item));
+
+  }
+  hideCart(){
+    cartOverlay.classList.remove("transparentBcg");
+    cartDOM.classList.remove("showCart");
+  }
+  cartLogic(){
+      //clear cart button
+      clearCartBtn.addEventListener('click', () => {
+          this.clearCart();
+        });
+    //cart functionality
+    cartContent.addEventListener('click',event =>{
+        if(event.target.classList.contains('remove-item'))
+        {
+            let removeItem = event.target;
+            let id = removeItem.dataset.id;
+            cartContent.removeChild(removeItem.parentElement.parentElement);
+            this.removeItem(id);
+        }
+        else if(event.target.classList.contains("fa-chevron-up")){
+            let addAmount =event.target;
+            let id = addAmount.dataset.id;
+            let tempItem = cart.find(item => item.id===id);
+            tempItem.amount = tempItem.amount + 1;
+            Storage.saveCart(cart);
+            this.setCartValues(cart);
+            addAmount.nextElementSibling.innerText = tempItem.amount;
+        }
+        else if(event.target.classList.contains("fa-chevron-down")){
+            let lowerAmount = event.target;
+            let id = lowerAmount.dataset.id;
+            let tempItem = cart.find(item => item.id===id);
+
+            tempItem.amount = tempItem.amount - 1;
+            if(tempItem.amount > 0){
+Storage.saveCart(cart);
+this.setCartValues(cart);
+lowerAmount.previousElementSibling.innerText = tempItem.amount;
+            }
+            else{
+                cartContent.removeChild
+                (lowerAmount.parentElement.parentElement);
+                this.removeItem(id);
+            }
+        }
+    });
+  }
+  clearCart() {
+      let cartItems = cart.map(item => item.id);
+      cartItems.forEach(id =>this.removeItem(id));
+    console.log(cartContent.children)
+
+      while(cartContent.children.length>0){
+          cartContent.removeChild(cartContent.children[0])
+      }
+      this.hideCart();
+  }
+  removeItem(id){
+      cart = cart.filter(item => item.id !==id);
+      this.setCartValues(cart);
+      Storage.saveCart(cart);
+      let button = this.getSingleButton(id);
+      button.disabled = false;
+      button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to cart`;
+  }
+  getSingleButton(id){
+      return buttonsDOM.find(button => button.dataset.id === id);
+  }
+}
+
+
+//local storage
+class Storage{
+    static saveProducts(products){
+        localStorage.setItem("products",JSON.stringify(products)
+        );
+    }
+    static getProduct(id){
+        let products = JSON.parse(localStorage.getItem
+            ('products'));
+            return products.find(product => product.id === id)
+    }
+    static saveCart() {
+        localStorage.setItem('cart',JSON.stringify(cart))
+    }
+    static getCart(){
+        return localStorage.getItem('cart')?JSON.parse
+        (localStorage.getItem('cart')):[]
+    }
+}
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const ui = new UI();
+    const products = new Products();
+//setup application
+ui.setupAPP();
+    //get all products
+    products.getProducts().then(products => { 
+    ui.displayProducts(products);
+    Storage.saveProducts(products);
+    }).then(()=>{
+     ui.getBagButtons();
+     ui.cartLogic()
+    });
+});
+
+
+      </script>
+
+
+
+  </body>
+  </html>

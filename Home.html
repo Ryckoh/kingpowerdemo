@@ -1,0 +1,2209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Furniture and Interior Decor procurement site</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Furnish.css" />
+    <link rel="stylesheet" href="Othercart.css" />
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Images/fav.ico">
+    
+  </head>
+
+<body>
+
+  <div id="loader">
+   
+  </div>
+
+
+  <div id="mySidenav" class="sidenav">
+         
+    <div class="flex justify-between">
+      <a class="-mt-14 ml-3" href="Home.html"><div class="Logo sm:mt-1 mt-2">
+        <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+       <h1 class="logo sm:text-2xl text-base text-gray-400 sm:-my-3 -my-2">furnish.</h1>
+      </div></a>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+
+    <div class="mt-36 text-center">
+      <a href="Home.html">Home</a>
+      <a href="Cart.html">Products</a>
+      <a href="Blog.html">Blog</a>
+      <a href="About.html">About</a>
+    </div>
+
+    <div class="nabfoot absolute bottom-0 right-16">
+      <h1 class="ml-14">
+      <i class="text-gray-700 hover:text-white fab fa-twitter"></i>
+      <i class="text-gray-700 hover:text-white fab fa-facebook"></i>
+      </h1>
+    <p class="text-gray-700">seismic ideas | &copy; 2021</p>
+    </div>
+
+      <ul class="cube-effect" style="z-index:-1;">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+   </ul>
+
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+  <div id="luxy">
+
+
+    <header class="flex justify-between bg-black items-center h-14 w-full m-auto lg:px-10 px-3 py-4">
+
+        <a href="Home.html"><div class="Logo sm:mt-1 mt-2">
+            <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+           <h1 class="logo sm:text-2xl text-base text-white sm:-my-3 -my-2">furnish.</h1>
+          </div></a>
+
+          <div class="lg:w-3/12 sm:w-4/12 w-5/12 flex justify-between items-center sm:mt-4 mt-3">
+  
+              <div class="sm:flex hidden dropdown relative inline-block">
+                <h1 class="dropbtn sm:text-xl text-red-500"><i class="fab fa-searchengin"></i></h1>
+                <div class="dropdown-content hidden w-60 absolute z-10 mt-8">
+                    <div class="serchbar block flex item-center py-2 w-68 bg-gray-200 px-2 m-auto">
+                    <input class="w-40 py-1 border border-current focus:outline-none" type="text" name="search" placeholder="search products">
+                    <button class="py-1 text-sm pr-1 text-sms bg-black text-white">SEARCH</button>
+                    </div>
+                </div>
+              </div>
+              
+              <div id="line">
+                <h1 class="draw">
+                  <span class="hover sm:flex hidden hover-1 text-white sm:text-lg text-sm cursor-pointer" onclick="openNav()">&#9776;Menu</span>
+                </h1>
+              </div>
+
+              <div id="line">
+                <h1 class="draw">
+                  <span class="sm:hidden flex hover hover-1 text-white text-xl cursor-pointer" onclick="openNav()">&#9776;</span>
+                </h1>
+              </div>
+              
+              <div id="line">
+                <h1 class="draw">
+                  <a href="Login.html"><h1 class="sm:flex hidden hover hover-1 sm:text-lg text-sm text-white cursor-pointer"><i class="far fa-user">Login</i></h1></a>
+                </h1>
+              </div>
+
+              <div id="line">
+                <h1 class="draw">
+                  <a href="Login.html"><h1 class="sm:hidden flex hover hover-1 text-base text-white cursor-pointer"><i class="far fa-user"></i></h1></a>
+                </h1>
+              </div>
+          
+              <div class="cart-btn cursor-pointer">
+                <span class="nav-icon text-white ">
+                    <i class="sm:text-lg text-base fas fa-cart-plus"></i>
+                </span>
+                 <div class="cart-items bg-red-500 px-1 text-xs rounded text-white absolute top-4 sm:right-8 right-2">0</div>
+            </div>
+          
+          </div>
+
+    </header>
+
+
+
+    <div id="head" class="slider">
+      <div class="slide current">
+        <div class="content">
+          <h1 class="font-semibold">Your luxury Cravings Satisfied</h1>
+          <p>
+            With a minimal design, this stylish Sitting Rooom was created with the purpose
+             of intensifying the relationship between furniture and owner.
+          </p>
+        </div>
+      </div>
+      <div class="slide two w-96 h-96">
+        <div class="content">
+          <h1 class="font-semibold">Kitchen Mastery</h1>
+          <p>
+           When cooking feels like a vacation. 
+           It can only come true with furnish's professional touch
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1 class="font-semibold">Top Notch Glasswares</h1>
+          <p>
+            From the highlands of venice to the mid of westeroos, 
+            you can always choose from our long range of varieties
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1 class="font-semibold">Bedroom Perfection</h1>
+          <p>
+            The Keyword is comfort! Your insatiable taste would meet its perfect
+            when you choose us.
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1 class="font-semibold">Beach relaxation</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
+            maxime, voluptatibus labore doloremque vero!
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1 class="font-semibold" >Classic Wardrobes</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
+            maxime, voluptatibus labore doloremque vero!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="prev"><i class="fas fa-arrow-left"></i></button>
+      <button id="next"><i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <!-- <div class="h-screen w-full bg-gray-500"></div>
+<div class="h-screen w-full bg-gray-200"></div> -->
+
+
+
+<section class="gradients md:pt-48 sm:pt-40 pt-20 text-black">
+
+
+  <div class="2NDcontainer sm:w-10/12 w-11/12 m-auto">
+  
+        <h1 class="lg:text-xl text-sm text-gray-700"style="font-family:Roos St Regis Display; ">The EXPERIENCE</h1>
+  
+        <div class="sizer text-black leading-tight pl-10 sm:pb-8 pb-4"style="font-family:Roos St Regis Display; ">
+          <h1>Impecable</h1>
+          <h1>Craftsmanship</h1>
+        </div>
+  
+        
+    <div class="lg:w-7/12 w-full flex sm:flex-row flex-col items-start lg:gap-28 md:gap-12 gap-8">
+    
+      <div class=" md:block hidden h-1 bg-red-500 sm:w-7/12 w-4/12 mt-1"></div>
+      <div class="md:hidden block border-b border-red-500 sm:w-7/12 w-4/12"></div>
+  
+      <h2 class="sm:text-base text-sm w-full sm:mt-0 mt-2">From the times of the mahgallan pine to the recents of the 
+        bumblebee oaks, Furnish inc has produce some of the most reonwned relable and capable hands in the art of furniture
+        making.
+      </h2>
+    
+    </div>
+  
+  
+  </div>
+  </section>
+
+
+<!--iMAGETEXT SPLIT-->
+    <div class="Showcaseconatiner reverse-grad">
+
+
+      <div class="lg:w-11/12 w-11/12 m-auto  justify-center flex items-center lg:flex hidden">
+      
+        <div class="mt-80 luxy-el" data-speed-y="-5" data-offset="-10">
+          <img class="" src="https://images.pexels.com/photos/5089178/pexels-photo-5089178.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+        </div>
+
+        <div class="z-50 lg:w-5/12 md:w-11/12 sm:-ml-28 -ml-12 bg-gray-100 text-black py-40 lg:pl-16 pl-8" style="height:auto">
+
+          <h1 class="lg:w-10/12 w-11/12 lg:text-4xl md:text-3xl sm:text-2xl text-xl"style="font-family:Roos St Regis Display;">Crafted with Precision and Quality Personified</h1>
+          <div class="border-red-500 border-b my-6 w-4/12"></div>
+          <p class="lg:w-10/12 w-11/12 md:text-xl text-base"style="font-family:Roos St Regis Display;">Iorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Excepturi minima quidem deserunt ipsum vitae quis fuga odit tenetur, accusantium maxime.
+           Excepturi minima quidem deserunt ipsum vitae quis fuga odit tenetur, accusantium maxime.
+          </p>
+
+        </div>
+        
+
+      </div>
+
+      <!--newone-->
+      <div class="lg:hidden block sm:w-10/12 w-11/12 m-auto py-16 reverse-grad">
+
+        <div class="py-6 bg-transparent">
+          <h1 class="text-black md:text-3xl sm:text-3xl text-2xl pb-2"style="font-family:Roos St Regis Display;">Crafted with Precision and Quality Personified</h1>
+          <div class="border-red-500 border-b w-3/12 mb-4"></div>
+          <p class="text-black sm:text-base text-sm robo">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Excepturi minima quidem deserunt ipsum vitae quis fuga odit tenetur, accusantium maxime.
+           Excepturi minima quidem deserunt ipsum vitae quis fuga odit tenetur, accusantium maxime.
+          </p>
+
+        </div>
+
+        <img class=" bg-transparent" src="https://images.pexels.com/photos/3637836/pexels-photo-3637836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+
+        <!--end of new-->
+      </div>
+
+
+
+
+
+
+      <div class="xl:w-10/12 lg:11/12 md:w-6/12 sm:w-4/12 w-2/12 m-auto md:flex hidden flex justify-between xl:h-40 lg:h-32 md:h-24 sm-h-16 h-8">
+        <p>.</p>
+        <img class="" src="Images/turn.gif" alt="myanimation">
+      </div>
+
+    </div>
+
+ 
+   
+
+
+
+
+
+<!---------------------------------Our Products------------------------------------------->
+
+
+<!-------------------------------BED----------------------------------------->
+
+<section class="red-grad-in text-black">
+
+
+  <div class="2NDcontainer lg:w-10/12 w-11/12 m-auto">
+  
+        <h1 class="lg:text-xl text-sm text-gray-700"style="font-family:Roos St Regis Display;">Top STOUT PRODUCTS</h1>
+  
+        <div class="sizer text-black leading-tight sm:pl-10 pl-0 pb-3"style="font-family:Roos St Regis Display;">
+          <h1>Made </h1>
+          <h1>With a Purpose</h1>
+        </div>
+  
+        
+    <div class="lg:w-11/12 w-full flex sm:flex-row flex-col items-start lg:gap-28 md:gap-12 gap-8">
+    
+      <div class="md:block hidden h-1 bg-red-500 sm:w-7/12 w-4/12 mt-1"></div>
+      <div class="md:hidden block border-b border-red-500 sm:w-7/12 w-4/12 mt-1"></div>
+  
+      <h2 class="sm:text-base text-sm w-full sm:mb-0 mb-4 sm:pt-0 pt-4 ">Passed on to the best hands are the best materials from far and beyond;
+        Eco-friendly sourced with state of art technology that facilitates green life preservation foremost.
+      </h2>
+
+      <h2 class="sm:flex hidden sm:text-base text-sm w-full ">Passed on to the best hands are the best materials from far and beyond;
+        Eco-friendly sourced with state of art technology that facilitates green life preservation foremost.
+      </h2>
+    
+    </div>
+  
+  
+  </div>
+ 
+
+
+<!--iMAGETEXT SPLIT-->
+    <div class="Showcaseconatiner lg:w-10/12 w-11/12 m-auto lg:pt-36 sm:pt-24 pt-12 md:flex hidden">
+
+
+      <div class="justify-center flex md:flex-row items-start lg:pt-20 pt-2">
+      
+        <div class="h-5/6 mt-80 lg:w-full sm:w-9/12 w-7/12 luxy-el" data-speed-y="-5" data-offset="-10 ">
+          <img class="" src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+        </div>
+
+        <div class="z-50 lg:w-6/12 w-8/12 m-auto lg:-ml-28 lg:mb-40 sm:mb-20 mb-32 bg-gray-50 text-black lg:py-24 sm:py-12 py-6 lg:px-12 sm:px-8 px-4" style="height:auto">
+          <p class="md:pb-8 pb-4 text-xl">01</p>
+          <h1 class="lg:w-9/12 w-11/12 lg:text-4xl md:text-3xl sm:text-2xl text-xl"style="font-family:Roos St Regis Display;">Dandastand Bed Furnish</h1>
+          <div class=" md:block hidden h-1 bg-red-500 w-4/12 my-8"></div>
+          <div class="md:hidden block border-b border-red-500 sm:w-7/12 w-4/12 my-4"></div>
+          <p class="lg:w-9/12 w-11/12  font-thin lg:leading-loose lg:text-lg md:text-base text-sm " style="font-family:'sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Excepturi minima quidem deserunt ipsum vitae quis fuga kp odit tenetur, accus antium maxime.
+          </p>
+
+
+
+          <a href="Cart.html"><div class="butty xl:block hidden mt-12">
+            <p class=" text-center lg:text-2xl lg:text-base text-white pt-1">Explore</p>
+          </div></a>
+          <a href="Cart.html"><button class="text-white bg-red-500 px-4 rounded xl:hidden block md:mt-10 mt-4">Explore</button></a>
+
+
+        </div>
+        
+
+      </div>
+
+    </div>
+
+
+    <!--new one-->
+    <div class="md:hidden block sm:w-11/12 w-11/12 m-auto pt-6 pb-2 px-2 bg-white rounded mt-20">
+
+      <div class="">
+        <p class="text-xl mb-3">01</p>
+        <h1 class="sm:text-3xl text-xl"style="font-family:Roos St Regis Display;">Dandastand Bed Furnish</h1>
+        <div class="border-b border-red-500 w-2/12 mb-4 mt-1"></div>
+
+        <p class="font-thin lg:leading-loose"style="font-family:'sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Excepturi minima quidem deserunt ipsum vitae quis fuga kp odit tenetur, accus antium maxime.
+         </p>
+
+         <div class="px-5 flex justify-between items-center">
+           <p class="text-white">.</p>
+         <a class="py-4" href="Cart.html"><button class=" py-2 text-white bg-red-500 hover:bg-red-700 px-4 rounded">Explore</button></a>
+          </div>
+      </div>
+
+
+      <img class="mt-3" src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+
+
+      <!--end of new-->
+    </div>
+
+
+
+
+
+  </section>
+
+
+
+
+
+
+  <!-------------------------------SOFA----------------------------------------->
+
+<section class="red-grad-out text-black regis" >
+
+<!--iMAGETEXT SPLIT-->
+    <div class="Showcaseconatiner lg:w-10/12 w-11/12 m-auto md:flex hidden">
+
+
+      <div class="justify-center flex items-start lg:pt-20 pt-0">
+      
+
+        <div class="z-50 lg:w-6/12 w-8/12 m-auto lg:-mr-28 lg:mb-80 sm:mb-20 mb-32 bg-gray-50 text-black lg:py-24 sm:py-12 py-6 lg:px-12 sm:px-8 px-4"style="height:auto">
+          <p class="md:pb-8 pb-4 text-xl">02</p>
+          <h1 class="lg:w-9/12 w-11/12 lg:text-4xl md:text-3xl sm:text-2xl text-xl"style="font-family:Roos St Regis Display;">Eppitigo Swedish Sofa</h1>
+          <div class=" md:block hidden h-1 bg-red-500 w-4/12 my-8"></div>
+          <div class="md:hidden block border-b border-red-500 sm:w-7/12 w-4/12 my-4"></div>
+          <p class="lg:w-9/12 w-11/12  font-thin lg:leading-loose lg:text-lg md:text-base text-sm "style="font-family:'sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Excepturi minima quidem deserunt ipsum vitae quis fuga odit tenetur, accusantium maxime.
+          </p>
+
+
+
+          <a href="Cart.html"><div class="butty xl:block hidden mt-12">
+            <p class=" text-center lg:text-2xl lg:text-base text-white pt-1">Explore</p>
+          </div></a>
+          <a href="Cart.html"><button class="text-white bg-red-500 px-4 rounded xl:hidden block md:mt-10 mt-4">Explore</button></a>
+
+
+
+        </div>
+
+        <div class="h-5/6 mt-80 lg:w-full sm:w-9/12 w-7/12 luxy-el" data-speed-y="-5" data-offset="-10">
+          <img src="https://cultivatingthevanguard.com/wp-content/uploads/2019/07/326927.webp" alt="photo of man working">
+        </div>
+        
+      </div>
+
+    </div>
+
+
+    
+<!--new one-->
+<div class="md:hidden text-black block sm:w-11/12 w-11/12 m-auto pt-6 pb-2 px-2 bg-white rounded pt-20">
+
+  <div class="">
+    <p class="text-xl mb-3"style="font-family:Roos St Regis Display;">02</p>
+    <h1 class="sm:text-3xl text-xl"style="font-family:Roos St Regis Display;">Eppitigo Swedish Sofa</h1>
+    <div class="border-b border-red-500 w-2/12 mb-4 mt-2"></div>
+
+    <p class="font-thin lg:leading-loose"style="font-family:'sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Excepturi minima quidem deserunt ipsum vitae quis fuga kp odit tenetur, accus antium maxime.
+     </p>
+
+     <div class="px-5 flex justify-between items-center">
+       <p class="text-white">.</p>
+     <a class="py-4" href="Cart.html"><button class=" py-2 text-white bg-red-500 hover:bg-red-700 px-4 rounded">Explore</button></a>
+      </div>
+  </div>
+
+
+  <img class="mt-3" src="https://cultivatingthevanguard.com/wp-content/uploads/2019/07/326927.webp" alt="photo of man working">
+
+
+  <!--end of new-->
+</div>
+
+
+    
+
+
+
+  </section>
+
+
+
+
+<!-------------------------------DINNING SET----------------------------------------->
+
+<section class="gradients text-black regis">
+
+  <!--iMAGETEXT SPLIT-->
+  <div class="Showcaseconatiner lg:w-10/12 w-11/12 m-auto md:flex hidden">
+
+
+    <div class="justify-center flex items-start lg:pt-20 pt-2">
+    
+      <div class="h-5/6 mt-80 lg:w-full sm:w-9/12 w-7/12 luxy-el" data-speed-y="-5" data-offset="-10">
+        <img src="https://images.pexels.com/photos/2387624/pexels-photo-2387624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+      </div>
+
+      <div class="z-50 lg:w-6/12 w-8/12 m-auto lg:-ml-28 lg:mb-60 sm:mb-20 mb-32 bg-gray-50 text-black lg:py-24 sm:py-12 py-6 lg:px-12 sm:px-8 px-4"style="height:auto">
+        <p class="md:pb-8 pb-4 text-xl">03</p>
+        <h1 class="lg:w-9/12 w-11/12 lg:text-4xl md:text-3xl sm:text-2xl text-xl"style="font-family:Roos St Regis Display;">Rhefumus Aldonis Dinning Set</h1>
+        <div class=" md:block hidden h-1 bg-red-500 w-4/12 my-8"></div>
+        <div class="md:hidden block border-b border-red-500 sm:w-7/12 w-4/12 my-4"></div>
+        <p class="lg:w-9/12 w-11/12  font-thin lg:leading-loose lg:text-lg md:text-base text-sm"style="font-family:'sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Excepturi minima quidem deserunt ipsum vitae quis fuga odit tenetur, accusantium maxime.
+        </p>
+
+
+
+        <a href="Cart.html"><div class="butty xl:block hidden mt-12">
+          <p class=" text-center lg:text-2xl lg:text-base text-white pt-1">Explore</p>
+        </div></a>
+        <a href="Cart.html"><button class="text-white bg-red-500 px-4 rounded xl:hidden block md:mt-10 mt-4">Explore</button></a>
+
+
+      </div>
+      
+
+    </div>
+
+  </div>
+
+
+<!--new one-->
+<div class="md:hidden text-black block sm:w-11/12 w-11/12 m-auto pt-6 pb-2 px-2 bg-white rounded pt-20">
+
+  <div class="">
+    <p class="text-xl mb-3"style="font-family:Roos St Regis Display;">03</p>
+    <h1 class="sm:text-3xl text-xl"style="font-family:Roos St Regis Display;">Rhefumus Aldonis Dinning Set</h1>
+    <div class="border-b border-red-500 w-2/12 mb-4 mt-2"></div>
+
+    <p class="font-thin lg:leading-loose"style="font-family:'sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Excepturi minima quidem deserunt ipsum vitae quis fuga kp odit tenetur, accus antium maxime.
+     </p>
+
+     <div class="px-5 flex justify-between items-center">
+       <p class="text-white">.</p>
+     <a class="py-4" href="Cart.html"><button class=" py-2 text-white bg-red-500 hover:bg-red-700 px-4 rounded">Explore</button></a>
+      </div>
+  </div>
+
+
+  <img class="mt-3" src="https://images.pexels.com/photos/2387624/pexels-photo-2387624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+
+
+  <!--end of new-->
+</div>
+
+      
+  
+  </section>
+
+
+
+
+
+
+  <!-------------------------------GALLERY---------------------------------------->
+
+  <section class="reverse-grad text-black regis lg:mt-0 mt-12"style="font-family:Roos St Regis Display;">
+
+
+    <div class="2NDcontainer w-10/12 m-auto">
+    
+          <h1 class="lg:text-xl text-sm text-gray-700 regis">New IN</h1>
+    
+          <div class="sizer text-black leading-tight sm:pl-10 pl-2 sm:pb-8 pb-3 regis">
+            <h1>An Espy</h1>
+            <h1>Of Our Artistry</h1>
+          </div>
+    
+          
+          <div class="lg:w-7/12 w-full flex sm:flex-row flex-col items-start lg:gap-28 md:gap-12 gap-8">
+    
+            <div class=" md:block hidden h-1 bg-red-500 sm:w-7/12 w-4/12 mt-1"></div>
+            <div class="md:hidden block border-b border-red-500 sm:w-7/12 w-3/12 mb-4"></div>
+
+            <h2 class="sm:text-base text-sm w-full robo">Hey there! Here is a glimpse of our our countless state-of-art 
+              artistry and designs. Feel free to send us a quota on any of these beauties that tickles your fancy
+            </h2>
+      
+      </div>
+    
+    
+    </div>
+    </section>
+  
+  
+  <!--iMAGETEXT SPLIT-->
+      <div class="Showcaseconatiner red-grad-in md:pt-20 pt-8 lg:pb-20 pb-0">
+  
+  
+        <div class="slidecont lg:w-10/12 w-11/12 m-auto"style="height: 650px;">
+
+          <div class="glide text-black">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="https://images.pexels.com/photos/2747901/pexels-photo-2747901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working"></li>
+                <li class="glide__slide"><img src="https://images.pexels.com/photos/3773570/pexels-photo-3773570.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+                <li class="glide__slide"><img src="https://images.pexels.com/photos/6283972/pexels-photo-6283972.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+                  <li class="glide__slide"><img src="https://images.pexels.com/photos/879010/pexels-photo-879010.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+                <li class="glide__slide"><img src="https://images.pexels.com/photos/6334916/pexels-photo-6334916.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <a href="Cart.html"><button class="text-white bg-red-500 px-4 py-2 rounded hover:bg-red-700 md:mt-10 mt-4">Make a bid</button></a>
+          </div>
+
+  
+        </div>
+
+
+      </div>
+
+      
+
+
+
+
+
+
+      <!--------------------------------- CATEGORIES--------------------------------------------->
+
+      <section class="red-grad-out text-black md:pt-96 sm:pt-36 sm:mt-0 -mt-60"style="font-family:Roos St Regis Display; ">
+
+
+        <div class="2NDcontainer w-10/12 m-auto">
+        
+              <h1 class="lg:text-xl text-sm text-center text-gray-700">CaTEGORIES</h1>
+        
+              <div class="sizer text-center text-black leading-tight md:pl-10 pl-1 pb-8">
+                <h1>Exquisitely Crafted</h1>
+                <h1>Just For You</h1>
+              </div>
+        
+              
+            
+
+
+          <!--------------------LIVING ROOM--------------------------------------->
+          <div class="flex md:flex-row flex-col items-center md:pt-40 pt-16 lg:flex hidden">
+
+            <div class="z-50 lg:w-9/12 w-11/12 md:-mr-36 -mb-12 bg-gray-100 md:border text-black md:py-16 py-8 md:px-12 px-4"style="height:auto">
+              <p class="pb-4 text-xl">01</p>
+              <h1 class="lg:w-9/12 w-11/12 lg:text-4xl sm:text-3xl text-2xl "style="font-family:Roos St Regis Display;">Living Room</h1>
+
+              <div class=" md:block hidden h-1 bg-red-500 w-4/12 my-8"></div>
+              <div class="md:hidden block border-b border-red-500 sm:w-5/12 w-4/12 my-4"></div>
+
+              <div class="w-full font-thin md:leading-loose leading-snug text-xl"style="font-family:'sans-serif;">
+
+                <div id="line">
+                  <h1 class="draw flex gap-4"md:>
+                    <p class="burron"></p>
+                    <a href="#"><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg2xl sm:text-xl text-lg text-black  cursor-pointer">Sofas</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href="#"><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Sectionals</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href="#"><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Chairs</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href="#"><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Tables</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href="#"><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Ottomans</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href="#"><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Benches</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href="#"><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Coffe Tables</h1></a>
+                  </h1>
+                </div>
+
+              </div>
+      
+              <a href="sectionalscart.html"><div class="butty bg-red-700 xl:block hidden mt-4">
+                <p class=" text-center lg:text-2xl lg:text-base text-white pt-1">Shop now</p>
+              </div></a>
+
+              <a href="sectionalscart.html"><button class="text-white bg-red-500 bg-red-700 focus:outline-none px-4  hover:bg-red-700 rounded xl:hidden block md:mt-10 mt-4">Shop now</button></a>
+      
+              
+
+            </div>
+
+
+            <div class="PICMIXGrIDER border grid grid-cols-2 ">
+
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/6283961/pexels-photo-6283961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/6283845/pexels-photo-6283845.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/5825345/pexels-photo-5825345.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.unsplash.com/photo-1548617335-c1b176388c65?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="photo of man working">
+              </div>
+    
+            </div>
+
+          </div>
+
+          
+        </div>
+
+
+             <!--newone-->
+             <div class="lg:hidden block sm:w-10/12 w-full m-auto">
+
+              <div class="w-full bg-transparent pt-12 pb-4 sm:px-8 px-4">
+                <h1 class="sm:text-2xl text-xl text-red-500 pb-2 regis"style="font-family:Roos St Regis Display;">01</h1>
+                <h1 class="sm:text-3xl text-2xl text-black border-b border-red-500 pb-2 regis"style="font-family:Roos St Regis Display;">Living Room</h1>
+                <a href="Cart.html"><h1 class="pb-2 pt-4 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Sofas</h1>
+                <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Sectionals</h1>
+                <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Chairs</h1>
+                <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Tables</h1>
+                <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Ottomans</h1>
+                <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Coffee Tables</h1>
+              </div>
+            
+    
+              <div class="PICMIXGrIDER grid grid-cols-2 px-2">
+    
+                <div class="">
+                  <img src="https://images.pexels.com/photos/6283961/pexels-photo-6283961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+                </div>
+                <div class="">
+                  <img src="https://images.pexels.com/photos/6283845/pexels-photo-6283845.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+                </div>
+                <div class="">
+                  <img src="https://images.pexels.com/photos/5825345/pexels-photo-5825345.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+                </div>
+                <div class="">
+                  <img src="https://images.unsplash.com/photo-1548617335-c1b176388c65?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="photo of man working">
+                </div>
+      
+              </div>
+    
+    
+             </div>
+
+
+
+        </section>
+
+
+
+          <!--------------------BEDROOM--------------------------------------->
+        <div class="gradients">
+
+          <div class="w-10/12 m-auto md:flex-row flex-col flex items-center pt-60 gradients lg:flex hidden">
+
+            <div class="z-50 lg:w-9/12 w-11/12 md:-mr-36 -mb-12 bg-gray-100 md:border text-black md:py-16 py-8 md:px-12 px-4"style="height:auto">
+              <p class="pb-4 text-xl">02</p>
+              <h1 class="lg:w-9/12 w-11/12 lg:text-4xl sm:text-3xl text-2xl"style="font-family:Roos St Regis Display;">Bed Room</h1>
+
+              <div class=" md:block hidden h-1 bg-red-500 w-4/12 my-8"></div>
+              <div class="md:hidden block border-b border-red-500 sm:w-5/12 w-4/12 my-4"></div>
+
+                <div class="md:w-7/12 w-11/12 font-thin md:leading-loose leading-snug text-xl"style="font-family:'sans-serif;">
+
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:nt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Beds</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Headboards</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Drawers</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Wardrobe</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Dressers</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">NightStands</h1></a>
+                  </h1>
+                </div>
+                
+
+              </div>
+      
+              <a href="Beds.html"><div class="butty xl:block hidden mt-4">
+                <p class=" text-center lg:text-2xl lg:text-base text-white pt-1">Shop now</p>
+              </div></a>
+              <a href="Beds.html"><button class="text-white bg-red-500 bg-red-700 focus:outline-none px-4 rounded xl:hidden block md:mt-10 mt-4">Shop now</button></a>
+
+            </div>
+
+
+            <div class="PICMIXGrIDER border grid grid-cols-2 ">
+
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/6198666/pexels-photo-6198666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/6394593/pexels-photo-6394593.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/5698412/pexels-photo-5698412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+    
+            </div>
+
+
+          </div>
+
+
+            <!--newone-->
+         <div class="lg:hidden block sm:w-10/12 w-full m-auto"style="font-family:Roos St Regis Display;">
+
+            <div class="w-full bg-transparent pt-12 pb-4 sm:px-8 px-4">
+              <h1 class="sm:text-2xl text-xl text-red-500 pb-2 regis"style="font-family:Roos St Regis Display;">02</h1>
+              <h1 class="sm:text-3xl text-2xl text-black border-b border-red-500 pb-2 regis"style="font-family:Roos St Regis Display;">Bedroom</h1>
+              <a href="Cart.html"><h1 class="pb-2 pt-4 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Beds</h1>
+              <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Headboards</h1>
+              <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Drawers</h1>
+              <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Wardrobe</h1>
+              <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Dressers</h1>
+              <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">NightStands</h1>
+            </div>
+
+
+            <div class="PICMIXGrIDER grid grid-cols-2 px-2">
+
+              <div class="">
+                <img src="https://images.pexels.com/photos/6198666/pexels-photo-6198666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="">
+                <img src="https://images.pexels.com/photos/6394593/pexels-photo-6394593.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="">
+                <img src="https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="">
+                <img src="https://images.pexels.com/photos/5698412/pexels-photo-5698412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+    
+            </div>
+
+
+            <!--end of new-->
+         </div>
+
+
+        </div>
+
+
+
+
+<!-----------------------------------KTCHEN--------------------------->
+        <div class="reverse-grad">
+
+          <div class="w-10/12 m-auto md:flex-row flex-col flex items-center pt-60 reverse-grad lg:flex hidden">
+
+            <div class="z-50 lg:w-9/12 w-11/12 md:-mr-36 -mb-12 bg-gray-100 md:border text-black md:py-16 py-8 md:px-12 px-4"style="height:auto">
+              <p class="pb-4 text-xl">03</p>
+              <h1 class="lg:w-9/12 w-11/12 lg:text-4xl sm:text-3xl text-2xl"style="font-family:Roos St Regis Display;">Kitchen & Dinning Room</h1>
+
+              <div class=" md:block hidden h-1 bg-red-500 w-4/12 my-8"></div>
+              <div class="md:hidden block border-b border-red-500 sm:w-5/12 w-4/12 my-4"></div>
+
+                <div class="md:w-7/12 w-11/12 font-thin md:leading-loose leading-snug text-xl"style="font-family:'sans-serif;">
+
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:nt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Cabinets</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Tables</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Stools</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Dinning set</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Buffets</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Sideboards</h1></a>
+                  </h1>
+                </div>
+                
+
+              </div>
+      
+              <a href="Kitchen.html"><div class="butty xl:block hidden mt-4">
+                <p class=" text-center lg:text-2xl lg:text-base text-white pt-1">Shop now</p>
+              </div></a>
+              <a href="Kitchen.html"><button class="text-white bg-red-500 bg-red-700 focus:outline-none px-4 rounded xl:hidden block md:mt-10 mt-4">Shop now</button></a>
+
+            </div>
+
+
+            <div class="PICMIXGrIDER border grid grid-cols-2 ">
+
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/932095/pexels-photo-932095.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.unsplash.com/photo-1503975817393-b3891b7a3b81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.unsplash.com/photo-1613345011294-582917b1b70a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="photo of man working">
+              </div>
+    
+            </div>
+
+
+          </div>
+
+
+
+           <!--newone-->
+         <div class="lg:hidden block sm:w-10/12 w-full m-auto"style="font-family:Roos St Regis Display;">
+
+          <div class="w-full bg-transparent pt-12 pb-4 sm:px-8 px-4">
+            <h1 class="sm:text-2xl text-xl text-red-500 pb-2 regis"style="font-family:Roos St Regis Display;">03</h1>
+            <h1 class="sm:text-3xl text-2xl text-black border-b border-red-500 pb-2 regis"style="font-family:Roos St Regis Display;">Kitchen</h1>
+            <a href="Kitchen.html"><h1 class="pb-2 pt-4 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Cabinets</h1>
+            <a href="Kitchen.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Tables</h1>
+            <a href="Kitchen.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Stools</h1>
+            <a href="Kitchen.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Dinning Set</h1>
+            <a href="Kitchen.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Buffets</h1>
+            <a href="Kitchen.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Sideboards</h1>
+          </div>
+
+
+          <div class="PICMIXGrIDER grid grid-cols-2 px-2">
+
+            <div class="">
+              <img src="https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+            </div>
+            <div class="">
+              <img src="https://images.pexels.com/photos/932095/pexels-photo-932095.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+            </div>
+            <div class="">
+              <img src="https://images.unsplash.com/photo-1503975817393-b3891b7a3b81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80" alt="photo of man working">
+            </div>
+            <div class="">
+              <img src="https://images.unsplash.com/photo-1613345011294-582917b1b70a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="photo of man working">
+            </div>
+  
+          </div>
+
+          <!--end of new-->
+          </div>
+
+        </div>
+
+
+
+
+
+<!-----------------------------------OTHER SPACES---------------------------------------------------->
+        <div class="red-grad-in">
+
+          <div class="w-10/12 m-auto md:flex-row flex-col flex items-center pt-60 red-grad-in lg:flex hidden">
+
+            <div class="z-50 lg:w-11/12 md:-mr-36 -mb-12 bg-gray-100 md:border text-black md:py-16 py-8 md:px-12 px-4"style="height:auto">
+              <p class="pb-4 text-xl">04</p>
+              <h1 class="w-full lg:text-4xl sm:text-3xl text-2xl"style="font-family:Roos St Regis Display;">Other Spaces</h1>
+
+              <div class=" md:block hidden h-1 bg-red-500 w-4/12 my-8"></div>
+              <div class="md:hidden block border-b border-red-500 sm:w-5/12 w-4/12 my-4"></div>
+
+                <div class="w-full font-thin md:leading-loose leading-snug text-xl"style="font-family:'sans-serif;">
+
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:nt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Bathroom</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Entryways</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Offices</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black cursor-pointer">Outdoorsey</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Study</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Book shelves</h1></a>
+                  </h1>
+                </div>
+                
+
+              </div>
+      
+              <a href="Cart.html"><div class="butty xl:block hidden mt-4">
+                <p class=" text-center lg:text-2xl lg:text-base text-white pt-1">Shop now</p>
+              </div></a>
+              <a href="Cart.html"><button class="text-white bg-red-500 hover:bg-red-700 focus:outline-none px-4 rounded xl:hidden block md:mt-10 mt-4">Shop now</button></a>
+
+            </div>
+
+
+            <div class="PICMIXGrIDER border grid grid-cols-2 ">
+  
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/1957478/pexels-photo-1957478.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" object-fit="cover" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/4915594/pexels-photo-4915594.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/6933771/pexels-photo-6933771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+    
+            </div>
+
+
+          </div>
+
+          <!--newone-->
+         <div class="lg:hidden block sm:w-10/12 w-full m-auto"style="font-family:Roos St Regis Display;">
+
+          <div class="w-full bg-transparent pt-12 pb-4 sm:px-8 px-4">
+            <h1 class="sm:text-2xl text-xl text-red-500 pb-2 regis"style="font-family:Roos St Regis Display;">04</h1>
+            <h1 class="sm:text-3xl text-2xl text-black border-b border-red-500 pb-2 regis"style="font-family:Roos St Regis Display;">Other Spaces</h1>
+            <a href="Cart.html"><h1 class="pb-2 pt-4 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Bathroom</h1>
+            <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Entryways</h1>
+            <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Outdoorsey</h1>
+            <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Offices</h1>
+            <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Study</h1>
+            <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Book Shelves</h1>
+          </div>
+
+
+          <div class="PICMIXGrIDER grid grid-cols-2 px-2">
+  
+            <div class="">
+              <img src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+            </div>
+            <div class="">
+              <img src="https://images.pexels.com/photos/1957478/pexels-photo-1957478.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" object-fit="cover" alt="photo of man working">
+            </div>
+            <div class="">
+              <img src="https://images.pexels.com/photos/4915594/pexels-photo-4915594.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+            </div>
+            <div class="">
+              <img src="https://images.pexels.com/photos/6933771/pexels-photo-6933771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+            </div>
+  
+          </div>
+
+
+          <!--end newone-->
+         </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+<!-----------------------------------Light---------------------------------------------------->
+        <div class="red-grad-out">
+
+          <div class="w-10/12 m-auto md:flex-row flex-col flex items-center pt-60 red-grad-out lg:flex hidden">
+
+            <div class="z-50 lg:w-9/12 w-11/12 md:-mr-36 -mb-12 bg-gray-100 md:border text-black md:py-16 py-8 md:px-12 px-4"style="height:auto">
+              <p class="pb-4 text-xl">05</p>
+              <h1 class="lg:w-9/12 w-11/12 lg:text-4xl sm:text-3xl text-2xl"style="font-family:Roos St Regis Display;">Lightening</h1>
+
+              <div class=" md:block hidden h-1 bg-red-500 w-4/12 my-8"></div>
+              <div class="md:hidden block border-b border-red-500 sm:w-5/12 w-4/12 my-4"></div>
+
+                <div class="md:w-7/12 w-11/12 font-thin md:leading-loose leading-snug text-xl"style="font-family:'sans-serif;">
+
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:nt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Security</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Luminaries</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Floods</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Discos</h1></a>
+                  </h1>
+                </div>
+                <div id="line">
+                  <h1 class="draw flex gap-4 md:mt-4">
+                    <p class="burron"></p>
+                    <a href=""><h1 class="hover hover-1 md:text-xl sm:text-xl text-lg text-black  cursor-pointer">Outdoorsey</h1></a>
+                  </h1>
+                </div>
+               
+
+              </div>
+      
+              <a href="Cart.html"><div class="butty xl:block hidden mt-4">
+                <p class=" text-center lg:text-2xl lg:text-base text-white pt-1">Shop now</p>
+              </div></a>
+              <a href="Cart.html"><button class="text-white bg-red-500 hover:bg-red-700 focus:outline-none px-4 rounded xl:hidden block md:mt-10 mt-4">Shop now</button></a>
+
+            </div>
+
+
+            <div class="PICMIXGrIDER border grid grid-cols-2 ">
+  
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/4792521/pexels-photo-4792521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/6143347/pexels-photo-6143347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" object-fit="cover" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/1340429/pexels-photo-1340429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="h-5/6 ">
+                <img src="https://images.pexels.com/photos/6933771/pexels-photo-6933771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+    
+            </div>
+
+
+          </div>
+
+          <!--new one-->
+          <div class="lg:hidden block sm:w-10/12 w-full m-auto"style="font-family:Roos St Regis Display;">
+            
+            <div class="w-full bg-transparent pt-12 pb-4 sm:px-8 px-4">
+              <h1 class="sm:text-2xl text-xl text-red-500 pb-2 regis"style="font-family:Roos St Regis Display;">05</h1>
+              <h1 class="sm:text-3xl text-2xl text-black border-b border-red-500 pb-2 regis"style="font-family:Roos St Regis Display;">Lightening</h1>
+              <a href="Cart.html"><h1 class="pb-2 pt-4 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Security</h1>
+              <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Luminaries</h1>
+              <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Floods</h1>
+              <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Disco</h1>
+              <a href="Cart.html"><h1 class="pb-2 cursor-pointer text-black hover:text-red-500 sm:text-xl text-base">Outdoorsey</h1>
+            </div>
+
+
+            <div class="PICMIXGrIDER grid grid-cols-2 px-2">
+  
+              <div class="">
+                <img src="https://images.pexels.com/photos/6143347/pexels-photo-6143347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="">
+                <img src="https://images.pexels.com/photos/6143347/pexels-photo-6143347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" object-fit="cover" alt="photo of man working">
+              </div>
+              <div class="">
+                <img src="https://images.pexels.com/photos/1340429/pexels-photo-1340429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+              <div class="">
+                <img src="https://images.pexels.com/photos/6933771/pexels-photo-6933771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+              </div>
+    
+            </div>
+
+            <!--end of newone-->
+          </div>
+
+
+
+
+
+        </div>
+
+
+
+<!--------------------------------MORE TO EXPLORE------------------------------------>
+
+<section class="free pt-64 text-black"style="font-family:Roos St Regis Display;">
+
+
+  <div class="2NDcontainer md:w-10/12 w-11/12 m-auto">
+  
+        <h1 class="lg:text-xl text-xs text-gray-700">MoRE TO EXPLORE</h1>
+  
+        <div class="lg:text-8xl md:text-5xl sm:text-4xl text-3xl text-black leading-tight pb-8">
+          <h1>Mordern</h1>
+          <h1>& Classic Design Inspiration</h1>
+        </div>
+  
+        
+    <div class="w-4/12">
+    
+      <div class=" md:block hidden h-1 bg-red-500 w-4/12"></div>
+      <div class="md:hidden block border-b border-red-500 sm:w-2/12 w-2/24"></div>
+  
+    
+    </div>
+  
+  
+  </div>
+  </section>
+
+
+<!---------------------------HOME DECOR------------------------->
+    <div class="Showcaseconatiner free-out lg:pt-40 pt-20">
+
+
+      <div class="lg:w-10/12 w-11/12 m-auto flex justify-between items-center">
+
+
+        <div class="w-6/12"style="font-family:Roos St Regis Display;">
+          <div class="lg:text-6xl md:text-4xl sm:text-3xl text-2xl text-black leading-tight pb-8">
+            <h1>Home Decor & Designs</h1>
+          </div>
+          <div class="border-b-2 border-red-500 w-4/12"></div>
+          <h1 class="lg:text-4xl sm:text-2xl text-xl text-black leading-tight pt-8">1/3</h1>
+        </div>
+      
+        
+        
+        <div class="lg:w-6/12 w-8/12">
+
+          <div class="text-black py-8"style="height:auto">
+
+            <h1 class="w-8/12 lg:text-4xl sm:text-2xl text-xl"style="font-family:Roos St Regis Display;">Inspirational Guide</h1>
+            <div class="border-b-2 border-red-500 w-2/12 lg:my-8 my-4"></div>
+
+            <div class="">
+            
+            <p class="w-full font-thin lg:text-lg sm:text-base text-sm">
+              Class is ephemeral but drip is forever! Here at furnish inc., we painstakingly &
+               pendropingly give your home a pretty pattern it deserves.
+              Hop in here to book an appointment with us either virtually or in person
+              
+            </p>
+            <a href="Blog.html"><button class="bg-red-500 py-1 hover:bg-red-700 focus:outline-none px-2 rounded mt-4 text-white">Book a consult</button></a>
+  
+            </div>
+
+          </div>
+
+          <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+
+          
+          
+        </div>
+
+   
+      </div>
+
+
+    </div>
+
+
+
+
+    <!---------------------------BLOG------------------------->
+    <div class="Showcaseconatiner reverse-grad lg:pt-40 pt-20">
+
+
+      <div class="lg:w-10/12 w-11/12 m-auto flex justify-between items-center">
+
+
+        <div class="w-6/12"style="font-family:Roos St Regis Display;">
+          <div class="lg:text-6xl md:text-4xl sm:text-3xl text-2xl text-black leading-tight pb-8">
+            <h1>Blog & Trends</h1>
+          </div>
+          <div class="border-b-2 border-red-500 w-4/12"></div>
+          <h1 class="lg:text-4xl sm:text-2xl text-xl text-black leading-tight pt-8">2/3</h1>
+        </div>
+      
+        
+        
+        <div class="lg:w-6/12 w-8/12">
+
+          <div class="text-black py-8"style="height:auto">
+
+            <h1 class="w-8/12 lg:text-4xl sm:text-2xl text-xl"style="font-family:Roos St Regis Display;">What in today!</h1>
+            <div class="border-b-2 border-red-500 w-2/12 lg:my-8 my-4"></div>
+
+            <div class="">
+            
+            <p class="w-full font-thin lg:text-lg sm:text-base text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, assumenda quis mollitia vel, 
+              dignissimos delectus quibusdam eius ut inventore at quas ex, ipsum quia tempore.
+            </p>
+            <a href="Blog.html"><button class="bg-red-500 py-1 hover:bg-red-700 focus:outline-none px-2 mt-4 rounded text-white">Read More</button></a>
+            </div>
+
+          </div>
+
+          <img src="https://images.pexels.com/photos/4052191/pexels-photo-4052191.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+
+          
+          
+        </div>
+
+   
+      </div>
+
+
+    </div>
+
+
+
+
+     <!---------------------------WHO WE ARE------------------------->
+     <div class="Showcaseconatiner red-grad-in lg:pt-40 pt-20">
+
+
+      <div class="lg:w-10/12 w-11/12 m-auto flex justify-between items-center">
+
+
+        <div class="w-6/12"style="font-family:Roos St Regis Display;">
+          <div class="lg:text-6xl md:text-4xl sm:text-3xl text-2xl text-black leading-tight pb-8">
+            <h1>Who We Are</h1>
+          </div>
+          <div class="border-b-2 border-red-500 w-4/12"></div>
+          <h1 class="lg:text-4xl sm:text-2xl text-xl text-black leading-tight pt-8">3/3</h1>
+        </div>
+      
+        
+        
+        <div class="lg:w-6/12 w-8/12">
+
+          <div class="text-black py-8"style="height:auto">
+
+            <h1 class="w-8/12 lg:text-4xl sm:text-2xl text-xl"style="font-family:Roos St Regis Display;">The Journey</h1>
+            <div class="border-b-2 border-red-500 w-2/12 lg:my-8 my-4"></div>
+
+            <div class="">
+            <p class="w-full font-thin lg:text-lg sm:text-base text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est recusandae,
+               consequuntur odio dolore cum aperiam aut laborum ipsa molestias sapiente.
+            </p>
+            <a href="About.html"><button class="bg-red-500 hover:bg-red-700 py-1 focus:outline-none px-2 mt-4 rounded text-white">Meet the team</button></a>
+  
+            </div>
+
+          </div>
+
+          <img src="https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo of man working">
+
+          
+          
+        </div>
+
+   
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <!----------------------------------CLIENTS EXPERIENCE-------------------------->
+
+   <section class="end py-12 ">
+      <div class="cont md:w-10/12 w-11/12 m-auto my-24">
+  
+          <div class="w-full m-auto text-center"style="font-family:Roos St Regis Display;">
+
+
+          <div class="w-6/12 m-auto text-center lg:text-7xl md:text-4xl sm:text-2xl text-xl text-black leading-tight pb-6">
+            <h1>Client's Experience</h1>
+          </div>
+          
+          <div class="border-b-2 border-red-500 m-auto w-1/12"></div>
+     
+  
+
+      <div class="lg:w-6/12 md:w-9/12 w-11/12 m-auto rounded border bg-white kara  border-current my-12 py-6">
+        <div class="mover">
+    
+          <div class="move">
+              <div class="w-11/12 h-auto m-auto bg-white text-black">
+                  <img class="rounded-full lg:w-48 md:w-40 w-20 m-auto" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=707b9c33066bf8808c934c8ab394dff6">
+                  <h1 class="lg:text-4xl md:text-3xl text-2xl t py-4">Irene Hernanes</h1>
+                  <h1 class="lg:text-2xl md:text-xl text-base pb-2 text-red-500 ">Veterinary Doctor</h1>
+                  <p class="lg:text-2xl text-base py-6">“More sureal than ever, my room look like a magazine after your touch.”</p>
+              </div>
+          </div>
+    
+          <div class="move">
+                    <div class="w-11/12 h-auto m-auto bg-white text-black">
+                        <img class="rounded-full lg:w-48 md:w-40 w-20 m-auto" src="https://uifaces.co/our-content/donated/6MWH9Xi_.jpg">
+                        <h1 class="lg:text-4xl md:text-3xl text-2xl t py-4">Gustavo zaza</h1>
+                        <h1 class="lg:text-2xl md:text-xl text-base pb-2 text-red-500 ">Forex broker</h1>
+                        <p class="lg:text-2xl text-base py-6">“I'll rather purchase these beauties from you than any other company”</p>
+                    </div>
+                
+          </div>
+
+          <div class="move">
+                    <div class="w-11/12 h-auto m-auto bg-white text-black">
+                        <img class="rounded-full lg:w-48 md:w-40 w-20 m-auto" src="https://uifaces.co/our-content/donated/3799Ffxy.jpeg">
+                        <h1 class="lg:text-4xl md:text-3xl text-2xl t py-4">Mmary Adeleye</h1>
+                        <h1 class="lg:text-2xl md:text-xl text-base pb-2 text-red-500 ">Lecturer, Havard University</h1>
+                        <p class="lg:text-2xl text-base py-6">“Laser deliveries and services. Lorem ipsum dolor sit amet, consectetur adipisicing elit”</p>
+                    </div>
+                
+          </div>
+
+          <div class="move">
+                    <div class="w-11/12 h-auto m-auto bg-white text-black">
+                        <img class="rounded-full lg:w-48 md:w-40 w-20 m-auto" src="https://randomuser.me/api/portraits/women/56.jpg">
+                        <h1 class="lg:text-4xl md:text-3xl text-2xl t py-4">Isiguzo Arene</h1>
+                        <h1 class="lg:text-2xl md:text-xl text-base pb-2 text-red-500 ">Actress, HollyWood</h1>
+                        <p class="lg:text-2xl text-base py-6">“it was only just a dream” Lorem ipsum dolor, sit elit. Corrupti quasi numquam nemo porro,</p>
+                    </div>
+                
+          </div>
+    
+          <div class="flex justify-between items-center px-4">
+            <button class="nexty rounded bg-red-500 hover:bg-red-700 focus:outline-none text-white py-1 px-2  mr-4"><i class="fas fa-arrow-left"></i></button>
+            <button class="prevy rounded bg-red-500 hover:bg-red-700 focus:outline-none text-white py-1 px-2"><i class="fas fa-arrow-right"></i></button>
+          </div>
+
+        </div>
+        <!--reviews-->
+      <div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+    
+    
+    <div class="FOOTERnatiner bg-black pt-10 pb-8  text-white"style="font-family: 'Open Sans Condensed', sans-serif', Poppins', sans-serif;">
+
+      <div class="w-11/12 m-auto  flex lg:flex-row flex-col justify-between items-start lg:gap-60 md:gap-40 gap-4">
+
+        <div class="lg:w-7/12 w-full">
+
+          <h1 class="kara text-2xl pb-6 opacity-80"style="font-family:Roos St Regis Display;">Sign Up For Furnish. Emails</h1>
+
+          <h2 class="text-base pb-4 opacity-80">Plus, hear about the latest and greatest from our family of brands!</h2>
+
+          <div class="flex text-red-500">
+          <h1 class="text-sm "><input type="radio" name="mail"> Vintage</h1>
+          <h1 class="text-sm ml-3"><input type="radio" name="mail"> Future</h1>
+          <h1 class="text-sm ml-3"><input type="radio" name="mail"> Mixed collections</h1>
+          </div>
+
+
+        </div>
+
+
+          <div class="lg: w-5/12 w-11/12 m-auto ">
+            <label class="opacity-50">Email Address*</label>
+            <h1 class="flex py-1"><input class="w-10/12 focus:outline-none px-4 rounded-l-sm text-black" type="email" name="mail" placeholder="Enter your mail"><button class="text-white px-3 rounded-r-sm py-1 bg-red-500 focus:outline-none hover:bg-red-700"><i class="fas fa-check text-2xl"></i></button></h1>
+           
+          </div>
+
+      </div>
+      
+            <p class="w-11/12 m-auto text-sm py-4 border-b border-red-100 opacity-50">By signing up, you will receive Furnish offers, promotions and other commercial messages. You are also agreeing to Furnish's <a class="underline" href ="www.google.com">Privacy Policy</a>. You may unsubscribe at any time.</p>
+
+    </div>
+
+
+
+
+      <footer class="bg-black text-white pt-2 -my-3">
+
+        <!------------------------------MNIMIZED FOOTER------------------------------------------>
+
+
+        <div class="MINIMIZED FOOTER md:hidden block m-auto w-11/12">
+
+
+          <section class="questions rounded border-b border-gray-50  bg-black py-2 px-2 text-white m-auto">
+       
+            <article class="question">
+             
+              <div class="question-title flex justify-between items-center text-lg">
+                <p class="mb-2 opacity-80">Help</p>
+  
+                <button type="button" class="question-btn">
+                  <span class="plus-icon focus:outline-none">
+                    <i class=" far fa-plus-square"></i>
+                  </span>
+                  <span class="minus-icon focus:outline-none">
+                    <i class=" far fa-minus-square"></i>
+                  </span>
+                </button>
+  
+              </div>
+             
+              <div class="question-text pt-2 border-t border-red-400 opacity-60">
+                <p>
+  
+                  <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Track Your Order</h1></a>
+                      </h1>
+                    </div>
+      
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Shipping</h1></a>
+                      </h1>
+                    </div>
+      
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Customer service</h1></a>
+                      </h1>
+                    </div>
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Current Promotions</h1></a>
+                      </h1>
+                    </div>
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Request a Catalog</h1></a>
+                      </h1>
+                    </div>
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Covid-19 Updates</h1></a>
+                      </h1>
+                    </div>
+  
+                </p>
+              </div>
+  
+            </article>
+            
+            <!---------------------SERVICES-------------------------------------->
+  
+          </section>
+        <section class="questions rounded border-b border-gray-50 bg-black py-2 px-2 text-white m-auto">
+         
+            <article class="question">
+             
+              <div class="question-title flex justify-between items-center text-lg">
+                <p class="mb-2 opacity-80">Services</p>
+  
+                <button type="button" class="question-btn">
+                  <span class="plus-icon focus:outline-none">
+                    <i class=" far fa-plus-square"></i>
+                  </span>
+                  <span class="minus-icon focus:outline-none">
+                    <i class=" far fa-minus-square"></i>
+                  </span>
+                </button>
+  
+              </div>
+             
+              <div class="question-text pt-2 border-t border-red-400 opacity-60">
+                <p>
+  
+                  <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Furnishxtra</h1></a>
+                      </h1>
+                    </div>
+      
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Gift Cards</h1></a>
+                      </h1>
+                    </div>
+      
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Store Pickup & Collection Points</h1></a>
+                      </h1>
+                    </div>
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Trades Membership</h1></a>
+                      </h1>
+                    </div>
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Store Guides</h1></a>
+                      </h1>
+                    </div>
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">I'll be fine</h1></a>
+                      </h1>
+                    </div>
+      
+  
+                </p>
+              </div>
+  
+            </article>
+            
+          </section>
+  
+          <!---------------------Connect-------------------------------------->
+  
+        <section class="questions rounded border-b border-gray-50 bg-black py-2 px-2 text-white m-auto">
+         
+            <article class="question">
+             
+              <div class="question-title flex justify-between items-center text-lg">
+                <p class="mb-2 opacity-80">Connect</p>
+  
+                <button type="button" class="question-btn">
+                  <span class="plus-icon focus:outline-none">
+                    <i class=" far fa-plus-square"></i>
+                  </span>
+                  <span class="minus-icon focus:outline-none">
+                    <i class=" far fa-minus-square"></i>
+                  </span>
+                </button>
+  
+              </div>
+             
+              <div class="question-text pt-2 border-t border-red-400 opacity-60">
+                <p>
+  
+                  <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Contact us</h1></a>
+                      </h1>
+                    </div>
+      
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Shop Locator</h1></a>
+                      </h1>
+                    </div>
+      
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Stay Connected</h1></a>
+                      </h1>
+                    </div>
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Styling services</h1></a>
+                      </h1>
+                    </div>
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Career</h1></a>
+                      </h1>
+                    </div>
+  
+                </p>
+              </div>
+  
+            </article>
+            
+          </section>
+  
+          <!---------------------Furnish Global-------------------------------------->
+  
+        <section class="questions rounded border-b border-gray-50 bg-black py-2 px-2 text-white m-auto">
+         
+            <article class="question">
+             
+              <div class="question-title flex justify-between items-center text-lg">
+                <p class="mb-2 opacity-80">Furnish Global</p>
+  
+                <button type="button" class="question-btn">
+                  <span class="plus-icon focus:outline-none">
+                    <i class=" far fa-plus-square"></i>
+                  </span>
+                  <span class="minus-icon focus:outline-none">
+                    <i class=" far fa-minus-square"></i>
+                  </span>
+                </button>
+  
+              </div>
+             
+              <div class="question-text pt-2 border-t border-red-400 opacity-60">
+                <p>
+  
+                  <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Ghana</h1></a>
+                      </h1>
+                    </div>
+      
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Mauritus</h1></a>
+                      </h1>
+                    </div>
+      
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Lancombe</h1></a>
+                      </h1>
+                    </div>
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Turkey</h1></a>
+                      </h1>
+                    </div>
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Madrid</h1></a>
+                      </h1>
+                    </div>
+                    <div id="lin">
+                      <h1 class="dra flex gap-4">
+                        <a href="404.html"><h1 class="hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">North London</h1></a>
+                      </h1>
+                    </div>
+  
+                </p>
+              </div>
+  
+            </article>
+            
+          </section>
+
+
+
+
+
+        </div>
+
+
+        <!-----------------------------DEFAULT FOOTER---------------------------->
+
+        <div class="footercontainer md:flex hidden flex justify-between items-start xl:w-9/10 lg:w-10/12 w-11/12 m-auto">
+
+            <div class=""style="font-family: 'Open Sans Condensed', sans-serif; font-family: 'Poppins', sans-serif; font-family: 'Roboto Slab', serif;">
+
+              <h1 class="text-xl font-medium pb-2">Help</h1>
+              
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Track Your Order</h1></a>
+                </h1>
+              </div>
+
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Shipping</h1></a>
+                </h1>
+              </div>
+
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Customer service</h1></a>
+                </h1>
+              </div>
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Current Promotions</h1></a>
+                </h1>
+              </div>
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Request a Catalog</h1></a>
+                </h1>
+              </div>
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Covid-19 Updates</h1></a>
+                </h1>
+              </div>
+
+
+            </div>
+            <div class=""style="font-family: 'Open Sans Condensed', sans-serif; font-family: 'Poppins', sans-serif; font-family: 'Roboto Slab', serif;">
+
+              <h1 class="text-xl font-medium pb-2">Services</h1>
+              
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Furnishxtra</h1></a>
+                </h1>
+              </div>
+
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Gift Cards</h1></a>
+                </h1>
+              </div>
+
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Store Pickup & Collection Points</h1></a>
+                </h1>
+              </div>
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Trades Membership</h1></a>
+                </h1>
+              </div>
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Store Guides</h1></a>
+                </h1>
+              </div>
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">I'll be fine</h1></a>
+                </h1>
+              </div>
+
+
+            </div>
+            <div class=""style="font-family: 'Open Sans Condensed', sans-serif; font-family: 'Poppins', sans-serif; font-family: 'Roboto Slab', serif;">
+
+              <h1 class="text-xl font-medium pb-2">Connect</h1>
+              
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Contact us</h1></a>
+                </h1>
+              </div>
+
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Shop Locator</h1></a>
+                </h1>
+              </div>
+
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Stay Connected</h1></a>
+                </h1>
+              </div>
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Styling services</h1></a>
+                </h1>
+              </div>
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Career</h1></a>
+                </h1>
+              </div>
+  
+
+
+            </div>
+
+            <div class=""style="font-family: 'Open Sans Condensed', sans-serif; font-family: 'Poppins', sans-serif; font-family: 'Roboto Slab', serif;">
+
+              <h1 class="text-xl font-medium pb-2">Furnish Global</h1>
+              
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Ghana</h1></a>
+                </h1>
+              </div>
+
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Mauritus</h1></a>
+                </h1>
+              </div>
+
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Lancombe</h1></a>
+                </h1>
+              </div>
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Turkey</h1></a>
+                </h1>
+              </div>
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">Madrid</h1></a>
+                </h1>
+              </div>
+              <div id="lin">
+                <h1 class="dra flex gap-4">
+                  <a href="404.html"><h1 class="opacity-70 hove hove-1 font-extralight mb-2  text-gray-50 tracking-wider cursor-pointer">North London</h1></a>
+                </h1>
+              </div>
+  
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <!--------------------------------ICons ------------------->
+
+        <div class="md:w-10/12 w-11/12 m-auto Iconscont lg:flex justify-between items-start grid sm:grid-cols-2 grid-cols-1 mt-12 mb-4">
+
+
+          <div class="sm:m-0 m-auto pb-4"style="font-family: 'Open Sans Condensed', sans-serif; font-family: 'Poppins', sans-serif; font-family: 'Roboto Slab', serif;">
+            <h1 class="sm:m-auto text-center text-base font-medium pb-2 text-gray-100 opacity-70">Our socials</h1>
+            <i class="text-blue-600 sm:text-3xl text--2xl hover:text-blue-400 cursor-pointer pr-4  fab fa-twitter"></i>
+            <i class="fab text-blue-600 sm:text-2xl text-xl hover:text-blue-400 cursor-pointer pr-4 fa-facebook-f"></i>
+            <i class="fab text-red-600 sm:text-2xl text-xl hover:text-red-400 cursor-pointer pr-4 fa-instagram"></i>
+            <i class="fab text-red-600 sm:text-2xl text-xl hover:text-red-400 cursor-pointer pr-4 fa-accusoft"></i>
+            <i class="fab text-red-600 sm:text-2xl text-xl hover:text-red-400 cursor-pointer fa-youtube"></i>
+          </div>
+
+        
+          <div class="sm:m-0 m-auto pb-4"style="font-family: 'Open Sans Condensed', sans-serif; font-family: 'Poppins', sans-serif; font-family: 'Roboto Slab', serif;">
+            <h1 class="text-base sm:m-auto text-center font-medium pb-2 text-gray-100 opacity-70">Delivery and payment options</h1>
+            <div class="icon-container">
+              <i class="fas pr-4 cursor-pointer  sm:text-xl text-base fa-hand-holding-usd"style="color:cyan"></i>
+              <i class="fab pr-4 cursor-pointer hover:text-blue-600 sm:text-2xl text-base fa-cc-visa"style="color:navy;"></i>
+              <i class="fab pr-4 cursor-pointer hover:text-blue-400 sm:text-2xl text-base fa-cc-amex"style="color:blue;"></i>
+              <i class="fab pr-4 cursor-pointer hover:text-red-400 sm:text-2xl text-base fa-cc-mastercard"style="color:red;"></i>
+              <i class="fab pr-4 cursor-pointer hover:text-orange-300 sm:text-2xl text-base fa-cc-discover"style="color:orange;"></i>
+              <i class="fab pr-4 cursor-pointer hover:text-yellow-300 text-4xl fa-dhl"style="color:yellow;"></i>
+              <i class="fab pr-4 cursor-pointer hover:text-red-400 text-3xl fa-fedex"style="color:red;"></i>
+              <i class="fas cursor-pointer sm:text-xl text-base fa-shipping-fast"style="color:greenyellow;"></i>
+            </div>
+          </div>
+
+
+            <div class="row-span-2 sm:m-0 m-auto pb-4"style="font-family: 'Open Sans Condensed', sans-serif; font-family: 'Poppins', sans-serif; font-family: 'Roboto Slab', serif;">
+              <h1 class="text-base sm:m-auto text-center font-medium pb-2 text-gray-100 opacity-70">Download Our App</h1>
+              <div class="flex">
+              <h1 class="cursor-pointer mx-2 hover:bg-red-600 rounded text-white border border-red-600 sm:py-2 py-1 px-4"><i class="fab fa-apple"></i>App store</h1>
+              <h1 class="cursor-pointer hover:bg-red-600 rounded text-white border border-red-600 sm:py-2 py-1 px-4"><i class="fab fa-google-play">Google play</i></h1>
+              </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="border-t border-red-100 py-2">
+
+          <div class="md:w-10/12 w-11/12 m-auto">
+
+            <div class="flex justify-between items-center gap-12 ">
+
+              <div id="lin">
+                <h1 class="dra  gap-4">
+                  <a href="404.html"><h1 class="hove hove-1 font-extralight md:text-sm text-xs opacity-40 text-gray-50 tracking-wider cursor-pointer">Terms of use</h1></a>
+                </h1>
+              </div>
+
+              <div id="lin">
+                <h1 class="dra gap-4">
+                  <a href="404.html"><h1 class="hove hove-1 font-extralight md:text-sm text-xs opacity-40 text-gray-50 tracking-wider cursor-pointer">Privacy policy</h1></a>
+                </h1>
+              </div>
+
+              <div id="lin">
+                <h1 class="dra">
+                  <a href="404.html"><h1 class="hove hove-1 font-extralight md:text-sm text-xs opacity-40 text-gray-50 tracking-wider cursor-pointer">English(UK)</h1></a>
+                </h1>
+              </div>
+
+
+
+            </div>
+
+            <h1 class="text-white text-center md:text-sm text-xs opacity-40 py-4">Copyrights &copy; All Rights Reserved, 2021 | Designed by Em_codes</h1>
+
+          </div>
+
+
+         </div>
+
+        </div>
+
+      </footer>
+
+
+
+
+       <!----cart  -->
+       <div class="cart-overlay">
+        <div class="cart">
+
+      <div class="flex justify-between flex-row-reverse items-center">
+         <span class="close-cart">
+            <i class="fas fa-window-close"></i>
+        </span>
+
+        <div class="">
+          <div class="tooltip text-sm animate-pulse"><i class="text-xl text-red-500 hover:bg-gray-600 fas fa-info-circle"></i>
+            <span class="tooltiptext ">
+              <i class="text-yellow-500 text-xs mr-2 fas fa-exclamation-triangle"></i>
+              <p class="text-xs">You have to be on the products page or logged in to increase,
+                decrease or clear cart. </p>
+            </span>
+          </div>
+         </div>
+      </div>
+
+        <h2 class="text-2xl font-semibold text-gray-700">Your Cart</h2>
+
+        <div class="cart-content text-black">
+            <!--cart item-->
+            <div class="cart-item text-black">
+            
+        </div>
+    
+        
+
+<div class="cart-footer text-black">
+    <h3>your total : $ <span class="cart-total">0</span></h3>
+    <button class="focus:outline-none clear-cart banner-btn px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Clear cart</button>
+    <a href="Checkout.html"><button  onclick="ala()" class="focus:outline-none px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Checkout</button></a>
+</div>
+<!----end of cart it-->
+      
+
+
+
+
+</div>
+
+ <!-- ------------------Smooth scrolling -------------------->
+    
+ <script src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
+    
+ <script charset="utf-8">  
+  var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+  if (!isMobile) {
+       luxy.init({
+         wrapper: '#luxy',
+         wrapperSpeed: 0.065,
+         
+        
+     }
+     );
+   }
+  </script>
+
+  <!----------------------------SLIDER-------------------------->
+
+      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+      <script>
+        const config = {
+          type: 'carousel',
+          focusAt: 'center',
+          autoplay: 3000,
+          perView: 1,
+          gap: 40,
+         
+
+          breakpoints:{
+            800: { perView: 1 },
+          },
+
+            animationTimingFunc: 'linear',
+            animationDuration: 800,
+            perView: 1
+          
+        };
+        new Glide('.glide', config).mount()
+      </script>
+
+
+<!-----------------------LOADER----------------------->
+
+<script type="text/javascript">
+    
+  var loader;
+  function loadNow(opacity) {
+      if(opacity <= 0) {
+          displayContent();
+      }
+      else {
+          loader.style.opacity = opacity;
+          window.setTimeout(function() {
+              loadNow(opacity - 0.99999)
+          }, 5000);
+      }
+  }
+  function displayContent() {
+      loader.style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+      loader = document.getElementById('loader');
+      loadNow(1)
+  });
+
+</script>
+
+
+    
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+  
+
+
+
+    <script src="Furnish.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>

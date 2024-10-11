@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Furniture and Interior Decor procurement site</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="/Images/fav.ico">
+</head>
+<style>
+    .shadowi{
+        box-shadow: 0px 1px 8px 2px #b1b1b1;
+    }
+    
+    .shadowie{
+        box-shadow: 0px 1px 8px 2px #e9e9e9;
+    }
+    .login-div{
+	position: absolute;
+	top:0;
+	left: 0;
+	box-sizing:border-box;
+    overflow-y: hidden;
+    z-index: -10;
+
+	}
+
+	
+</style>
+<body class="bg-gray-100 my-4">
+
+    <header class="checkout-div bg-white pb-2 mb-12 h-auto xl:w-8/12 lg:w-10/12 w-full m-auto">
+
+
+            <div class="flex sm:flex-row flex-col justify-between items-start sm:items-center py-4 w-11/12 m-auto">
+                <a class="w-5/12" href="Home.html"><div class="Logo sm:mt-1 mt-2">
+                <h1 class="sm:text-xl text-xl text-red-600"><i class="fab fa-accusoft"></i></h1>
+                <h1 class="logo sm:text-2xl text-xl text-black sm:-my-3 -my-2">furnish.</h1>
+                </div></a>
+        
+                <div class="flex mt-6 w-full sm:-mb-2 -mb-2 xl-mr-44 -mr-32">
+                
+                    <div class="flex items-center w-6/12">
+                        <div class="h-7 sm:w-2/12 w-6/12 rounded-full bg-green-500">
+                            <i class="ml-1 text-white fas fa-check"></i>
+                        </div>
+                        <p>Cart</p>
+                        <h1 class="ml-1 h-1 bg-green-500 w-full"></h1>
+                    </div>
+
+                    <div class="flex items-center w-6/12">
+                        <div class="h-7 sm:w-2/12 w-4/12 border-green-500 border-4 rounded-full">
+                            <p class="px-3 -mt-1">2</p>
+                        </div>
+                        <p>Checkout</p>
+                        <h1 class="ml-1 h-1 bg-gray-400 w-full"></h1>
+                    </div>
+
+                    <div class="flex items-center w-6/12 m-auto">
+                        <div class="h-7 sm:w-2/12 w-3/12 rounded-full border-4 border-gray-400 bg-gray-200">
+                            <p class="ml-2 -mt-1">3</p>
+                        </div>
+                        <p>Finish</p>
+                    </div>
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+           
+            
+            
+        <div class="w-11/12 bg-gray-200 pb-4 mb-12 m-auto shadowi">
+            <div class="cont w-11/12 m-auto flex md:flex-row flex-col-reverse justify-between items-start lg:gap-28 gap-6">
+
+            <div class="w-full m-auto mt-4">
+                <h1 class="text-xl font-semibold">Billing details</h1>
+
+                <form>
+                <label class="pl-1 mt-2">First & last name</label>
+                <input class="w-full rounded mb-3 bg-white border-blue-200 border-2 focus:outline-none py-1 px-1" type="text" name="name" placeholder="Enter name" required>
+
+                <label class="pl-1">Email</label>
+                <input class="w-full rounded mb-5 bg-white border-blue-200 border-2 focus:outline-none py-1 px-1" type="email" name="name" placeholder="Enter valid email" required>
+
+                
+                <label class="pl-1">Country:</label>
+                <select class="w-full rounded bg-white border-blue-200 border-2 focus:outline-none py-1 px-1" id="">
+                    <option value=""></option>
+                    <option value="">Nigeria</option>
+                    <option value="">Canada</option>
+                    <option value="">Madrid</option>
+                    <option value="">Whales</option>
+                </select>
+                
+
+                <div class="flex md:flex-row w-full flex-col lg:gap-8 gap-1 mt-4">
+
+                    <div class="">
+                        <label class="pl-1">State/county</label>
+                        <input class="bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1" type="text" name="text" required>
+                    </div>
+
+                    <div class="">
+                        <label class="pl-1">Zip/Postal code</label>
+                        <input class="bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1" type="text" name="text" required>
+                    </div>
+
+                </div>
+
+                </form>
+
+
+                <div class="Methods">
+                    <h1 class="text-xl font-semibold mt-6">Payment method</h1>
+
+                    <div class="flex justify-center gap-4 text-base text-gray-700 mt-3 mb-6">
+                    <h1  class="showSingle cursor-pointer font-semibold hover:text-red-500" target="1">Credit card</h1>
+                    <h1  class="showSingle cursor-pointer font-semibold hover:text-red-500" target="2">Pay on delivery</h1>
+                    </div>
+
+
+                    <section id="div1" class="targetDiv">
+                    <div class="py-1 w-full flex justify-between items-center bg-white rounded border-blue-200 border-2 focus:outline-none px-1">
+                        <input class="" type="radio" value="Credit card" >Credit card
+                        <div class="flex">
+                            <i class="fab pr-4 cursor-pointer hover:text-blue-600 sm:text-xl text-base fa-cc-visa" style="color:navy;"></i>
+                            <i class="fab pr-4 cursor-pointer hover:text-blue-400 sm:text-xl text-base fa-cc-amex" style="color:blue;"></i>
+                            <i class="fab pr-4 cursor-pointer hover:text-red-400 sm:text-xl text-base fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fab  cursor-pointer hover:text-orange-300 sm:text-xl text-base fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                    </div>
+
+                    <label class="pl-1 mt-4">Card number</label>
+                    <div class="flex py-1 justify-between items-center w-full rounded bg-white border-blue-200 border-2 focus:outline-none px-1">
+                        <input class="py-1 w-full focus:outline-none" type="text" name="name" placeholder="0000 1111 2222 3333" required>
+                        <i class="fab cursor-pointer hover:text-blue-600 sm:text-xl text-base fa-cc-visa" style="color:navy;"></i>
+                    </div>
+
+                   
+                    <div class="flex md:flex-row flex-col lg:gap-6 gap-1 mt-3">
+
+                        <div class="">
+                        <label class="pl-1 mt-2">Expiration date</label>
+                        <input class="w-full rounded bg-white border-blue-200 border-2 focus:outline-none py-1 px-1" type="date">
+                        </div>
+
+                        <div class="">
+                            <label class="pl-1">Security code</label>
+                            <input class="bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1" type="text" name="text" placeholder="000" required>
+                        </div>
+
+                    </div>
+
+
+                    <label class="pl-1 mt-6">Pay with Paypal</label>
+                    <div class="py-2 flex justify-between items-center bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1">
+                        <input type="radio">
+                        <i class="text-2xl fab fa-cc-paypal"style="color:blue;"></i>
+                    </div>
+
+                    <div class="">
+                        <input type="checkbox" value=""><span class="text-sm text-gray-600 ml-2">By clicking the button, you agree to the T&C's</span>
+                    </div>
+
+                    <a href="Cart.html"><input onclick="kapa()" class="w-full mt-6 focus:outline-none py-2 text-white text-center bg-green-500 hover:bg-red-500" type="submit" name="submit" value="PLACE ORDER"></a>
+
+                    </section>
+            
+
+
+
+
+                    <!----HOme Delvery-->
+                    <section id="div2" class="targetDiv">
+                       
+                        <input type="radio">
+                        <div class="py-2 justify-between items-center bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1">
+                            <p>Pick up delivery on our outlets close to you</p>
+                        </div>
+
+
+                        <input class="mt-4" type="radio">
+                        <div class="py-2 flex bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1">
+                            <p>Delivery yo your default billing address</p>
+                        </div>
+
+                        <a href="Cart.html"><input onclick="kapa()" class="mt-4 focus:outline-none w-full py-2 text-center text-white bg-green-500 hover:bg-red-500" type="submit" name="submit" value="PLACE ORDER"></a>
+
+                    </section>
+
+
+                </div>
+            </div>
+
+                <!---Other Div-->
+                <div class="border w-full bg-white border-blue-200 py-12 md:mt-16 mt-6">
+                    
+                    <div class="w-11/12 m-auto">
+
+                        <div class="flex w-7/12 -mt-8">
+                            <i class=" mt-1 fas fa-cart-plus"></i>
+                            <p class="font-semibold" >Cart Summary</p>
+                        </div>
+
+
+                        <div class=" pt-4 flex justify-between items-start border-b border-current">
+                            <div class="">
+                            <p>XXXX XXXXXXXXXXX XXXX</p>
+                            <P class="text-xs">Lorem ipsum dolor sit amet coit. Nostrum aspernatur
+                                quaerat optio.</P>
+                            </div>
+                            
+                            <div class="">
+                                <p>$1099</p>
+                            </div>
+
+                        </div>
+                        <div class=" pt-4 flex justify-between items-start border-b border-current">
+                            <div class="">
+                            <p>XXXX XXXXXXXXXXX XXXX</p>
+                            <P class="text-xs">Lorem ipsum dolor sit amet coit. Nostrum aspernatur
+                                quaerat optio.</P>
+                            </div>
+                            
+                            <div class="">
+                                <p>$1099</p>
+                            </div>
+
+                        </div>
+
+                        <div class=" pt-4 flex justify-between items-start border-b border-current">
+                            <div class="">
+                            <p>XXXX XXXXXXXXXXX XXXX</p>
+                            <P class="text-xs">Lorem ipsum dolor sit amet coit. Nostrum aspernatur
+                                quaerat optio.</P>
+                            </div>
+                            
+                            <div class="">
+                                <p>$1099</p>
+                            </div>
+
+                        </div>
+
+                        <div class="flex justify-between">
+                            <p class="text-white">.</p>
+                            <p>Sub total: $3,297</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+        </div>
+        </div>
+        
+    </header>
+
+
+    <div class="login-div w-7/12 h-96 bg-red-600 rounded-tr-full"></div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        jQuery(function(){
+     jQuery('#showall').click(function(){
+           jQuery('.targetDiv').show();
+    });
+    jQuery('.showSingle').click(function(){
+          jQuery('.targetDiv').hide();
+          jQuery('#div'+$(this).attr('target')).show();
+    });
+});
+    </script>
+
+    <script>
+       function kapa() {
+                alert("Order #0074636 is confirmed! Check your email for expected delivery timelines. Thanks for shopping on Furnish beautiful!");
+                }
+    </script>
+
+</body>
+</html>
